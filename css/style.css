@@ -1,0 +1,28 @@
+body{
+    background-color: #124916;
+}
+.calculator{
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 100px auto;
+    box-shadow: 0px 0px 10px #fff;
+}
+.calculator form{
+    background-color: black;
+    padding-top: 10px;
+}
+.calculator form .btn-info{
+    background-color: transparent;
+}
+.calculator form .display-box{
+    background-color: transparent;
+    color: turquoise;
+}
+.btn{
+    width: 52px;
+}
+.display-box {
+	font-size: 20px;
+	font-weight: 600;
+}

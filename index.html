@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="calculator">
+                    <form action="#" class="form-control" name="mamun">
+                        <input type="text" value="0" placeholder="0" class="form-control display-box mb-2 text-right" name="display">
+                        <div class="num-area">
+                            <div class="num-line mb-1">
+                                <input type="button" value="%" name="btn" class="btn btn-info disabled" onclick="calculate(this.value)">
+                                <input type="button" value="CE" name="btn" class="btn btn-warning disabled" onclick="display.value = null">
+                                <input type="button" value="C" name="btn" class="btn btn-danger" onclick="display.value = null">
+                                <input type="button" value="/" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+                            </div>
+                            <div class="num-line mb-1">
+                                <input type="button" value="7" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="8" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="9" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="*" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+                            </div>
+                            <div class="num-line mb-1">
+                                <input type="button" value="4" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="5" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="6" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="-" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+                            </div>
+                            <div class="num-line mb-1">
+                                <input type="button" value="1" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="2" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="3" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="+" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+                            </div>
+                            <div class="num-line mb-1">
+                                <input type="button" value="0" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="00" name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="." name="btn" class="btn btn-info" onclick="calculate(this.value)">
+                                <input type="button" value="=" name="btn" class="btn btn-success" onclick="display.value = eval(display.value)">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
